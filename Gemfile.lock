@@ -201,7 +201,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  active_model_serializers (~> 0.10.0)
+  active_model_serializers
   byebug
   capybara
   coffee-rails (~> 4.2)
