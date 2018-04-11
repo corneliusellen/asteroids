@@ -11,15 +11,12 @@ describe "User can find most dangerous day" do
 
       expect(current_path).to eq(most_dangerous_day_path)
       expect(page).to have_content("Most Dangerous Day")
-      expect(page).to have_content("January 1, 2018 - January 7, 2018")
-      within(first('.asteroid')) do
-        expect(page).to have_content("Name: (2014 KT76)")
-        expect(page).to have_content("NEO Reference ID: 3672906")
-      end
-      within(last('.asteroid')) do
-        expect(page).to have_content("Name: (2017 YR1)")
-        expect(page).to have_content("NEO Reference ID: 3794979")
-      end
+      expect(page).to have_content("2018-01-01 - 2018-01-07")
+      expect(page).to have_content("Name: (2014 KT76)")
+      expect(page).to have_content("NEO Reference ID: 3672906")
+      expect(page).to have_content("Name: (2017 YR1)")
+      expect(page).to have_content("NEO Reference ID: 3794979")
+
     end
   end
 end
