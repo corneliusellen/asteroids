@@ -3,7 +3,7 @@
 
 <% @search.asteroids.each do |asteroid| %>
   <div class="asteroid">
-    <p>Name: (<%= asteroid.name %>)</p> 
+    <p>Name: <%= asteroid.name %></p>
     <p>NEO Reference ID: <%= asteroid.neo_reference %></p>
   </div>
 <% end %>
