@@ -1,0 +1,9 @@
+<h2>Most Dangerous Day</h2>
+<h3><%= @search.start_date %> - <%= @search.end_date %></h3>
+
+<% @search.asteroids.each do |asteroid| %>
+  <div class="asteroid">
+    <p>Name: (<%= asteroid.name %>)</p> 
+    <p>NEO Reference ID: <%= asteroid.neo_reference %></p>
+  </div>
+<% end %>
