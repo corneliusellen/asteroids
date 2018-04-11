@@ -13,11 +13,6 @@ describe "GET /user/favorites" do
     expect(results.first["user_id"]).to eq(user.id)
     expect(results.first["id"]).to eq(favorite.id)
     expect(results.first["neo_reference_id"]).to eq(favorite.neo_reference_id)
-    expect(results.first["asteroid"].count).to eq(1)
+    expect(results.first["asteroid"]["name"]).to eq("153306 (2001 JL1)")
   end
 end
-
-
-# As a registered user
-# When I send a 'GET' request to '/api/v1/user/favorites?api_key=abc123'
-# Then I should receive a JSON response as follows:
