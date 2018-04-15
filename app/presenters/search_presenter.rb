@@ -6,11 +6,11 @@ class SearchPresenter
   end
 
   def start_date
-    @start.to_date
+    Time.parse(@start).strftime("%B %d, %Y")
   end
 
   def end_date
-    @end.to_date
+    Time.parse(@end).strftime("%B %d, %Y")
   end
 
   def asteroids
