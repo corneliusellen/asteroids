@@ -11,7 +11,7 @@ describe "User can find most dangerous day" do
 
       expect(current_path).to eq(most_dangerous_day_path)
       expect(page).to have_content("Most Dangerous Day")
-      expect(page).to have_content("2018-01-01 - 2018-01-07")
+      expect(page).to have_content("January 01, 2018 - January 07")
       expect(page).to have_content("Name: (2014 KT76)")
       expect(page).to have_content("NEO Reference ID: 3672906")
       expect(page).to have_content("Name: (2001 LD)")

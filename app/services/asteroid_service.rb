@@ -1,7 +1,7 @@
 class AsteroidService
   def initialize(start_date, end_date)
-    @start = start_date
-    @end = end_date
+    @start = Time.parse(start_date).strftime("%Y-%m-%d")
+    @end = Time.parse(end_date).strftime("%Y-%m-%d")
   end
 
   def run
