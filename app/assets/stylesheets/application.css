@@ -167,3 +167,16 @@ nav {
 .date-search.btn {
   background-color:#FFF;
 }
+
+.search-result {
+  padding: 50px;
+  padding-left: 70px;
+}
+
+.search-result h3 {
+  color: #7CB4A0;
+}
+
+.search-result h1, h4 {
+  opacity: 0.7;
+}
