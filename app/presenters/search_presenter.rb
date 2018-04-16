@@ -14,6 +14,6 @@ class SearchPresenter
   end
 
   def asteroids
-    AsteroidMaker.new(@start, @end).find_by_date
+    asteroids ||= AsteroidMaker.new(@start, @end).find_by_date
   end
 end
