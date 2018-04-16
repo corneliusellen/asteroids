@@ -2,7 +2,7 @@
   <h1>Most Dangerous Day</h1>
   <h4><%= @search.start_date %> - <%= @search.end_date %></h4>
 <br>
-  <h3><%= @search.start_date %> has potentially dangerous near earth objects</h3>
+  <h3><%= @search.start_date %> has <%= @search.asteroids.count %> potentially dangerous near earth objects</h3>
   <% @search.asteroids.each do |asteroid| %>
     <div class="asteroid">
       <p>Name: <%= asteroid.name %></p>
