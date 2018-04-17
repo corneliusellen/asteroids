@@ -6,7 +6,7 @@ describe "POST /user/favorites" do
     api_key = create(:api_key, value: "123abc", user: user)
     create(:favorite, neo_reference_id: 2153306, user: user)
 
-    headers = {"neo_reference_id" => "2021277"}
+    headers = {"HTTP_NEO_REFERENCE_ID" => "2021277"}
     post "/api/v1/user/favorites?api_key=#{api_key.value}", headers: headers
 
     results = JSON.parse(response.body)
